@@ -8,6 +8,7 @@ def index():
     A function that displays the main route page
     '''
     news_sources = get_news_sources('general')
+    print(news_sources)
     xxx = get_news_sources('sports')
     business = get_news_sources('business')
 
@@ -19,16 +20,6 @@ def articles(id):
     A function that defines the article's objects
     '''
     source_articles=get_news_articles('id')
+    print(source_articles)
 
     return render_template('articles.html',articles=source_articles)
-
-@main.route('/source')
-def source():
-	'''
-	function returns index page and its data
-	'''
-
-	news_sources = get_source('sources')
-
-	return render_template('newssource.html',sources = news_sources)
-
