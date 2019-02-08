@@ -10,7 +10,9 @@ def index():
     news_sources = get_news_sources('general')
     print(news_sources)
     xxx = get_news_sources('sports')
+    print(xxx)
     business = get_news_sources('business')
+    print(business)
 
     return render_template('index.html',general=news_sources,sports=xxx,business=business)
 
