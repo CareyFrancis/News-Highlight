@@ -33,9 +33,9 @@ def get_news_sources(category):
     return news_sources_results
 
 def process_sources_results(news_sources_list):
-    
-    '''
 
+    '''
+    
     '''
 
     news_sources_results=[]
